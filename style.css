@@ -211,29 +211,35 @@ footer a:hover {
   background-color: #e22eac;
   color: #fff;
 }
-/* WebKit browsers (Chrome, Edge, Safari) */
+/* Scrollbar width */
 ::-webkit-scrollbar {
   width: 8px;
-  height: 8px; /* for horizontal scrollbar */
+  height: 8px;
 }
 
+/* Track: subtle dark purple */
 ::-webkit-scrollbar-track {
-  background: #FF3CAC;
+  background: #2a1a2e;
   border-radius: 10px;
+  box-shadow: inset 0 0 5px #140028;
 }
 
+/* Thumb: gradient pink with smooth rounded edges */
 ::-webkit-scrollbar-thumb {
-  background: #e22eac;
+  background: linear-gradient(180deg, #ff3cac, #e22eac);
   border-radius: 10px;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 0 8px #ff3cac;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Thumb hover: brighter pink glow */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff66cc; /* lighter pink on hover */
+  background: linear-gradient(180deg, #ff66cc, #ff3cac);
+  box-shadow: 0 0 12px #ff66cc;
 }
 
-/* Firefox */
+/* Firefox scrollbar */
 * {
-  scrollbar-width: thin; /* makes scrollbar thinner */
-  scrollbar-color: #e22eac #FF3CAC; /* thumb color then track color */
+  scrollbar-width: thin;
+  scrollbar-color: #e22eac #2a1a2e; /* thumb, track */
 }
