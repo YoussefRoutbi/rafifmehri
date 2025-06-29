@@ -211,3 +211,29 @@ footer a:hover {
   background-color: #e22eac;
   color: #fff;
 }
+/* WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; /* for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #FF3CAC;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e22eac;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff66cc; /* lighter pink on hover */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin; /* makes scrollbar thinner */
+  scrollbar-color: #e22eac #FF3CAC; /* thumb color then track color */
+}
