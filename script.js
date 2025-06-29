@@ -32,9 +32,10 @@ function type() {
   } else {
     setTimeout(type, isDeleting ? speed / 2 : speed);
   }
+  const text = current.substring(0, charIndex);
+  element.textContent = text === "" ? "\u00A0" : text;
 }
-const text = current.substring(0, charIndex);
-element.textContent = text === "" ? "\u00A0" : text;
+
 type();
 
 // ========== CANVAS: Soft Floating 🎀 ==========
