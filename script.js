@@ -2,7 +2,7 @@
 const texts = [
   "Rafif Mehri",
   "3éme Math Student √𝞹",
-  "Computer Science Student"
+  "Future Data Science Student"
 ];
 
 let index = 0;
@@ -33,6 +33,8 @@ function type() {
     setTimeout(type, isDeleting ? speed / 2 : speed);
   }
 }
+const text = current.substring(0, charIndex);
+element.textContent = text === "" ? "\u00A0" : text;
 type();
 
 // ========== CANVAS: Soft Floating 🎀 ==========
