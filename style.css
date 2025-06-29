@@ -1,0 +1,213 @@
+
+/* ====== BASE STYLING ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0D0D0D;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  color: #FF3CAC;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+}
+
+/* ====== HEADER ====== */
+h1 {
+  color: #FF3CAC;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+p.lead {
+  font-size: 1.25rem;
+  color: #e3e3e3;
+}
+.ic i {
+  font-size: 1.6rem;
+  margin: 0 10px;
+  color: #FF3CAC;
+  transition: 0.3s;
+}
+.ic i:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+/* ====== CARD STYLING ====== */
+.card {
+  background-color: #1A1A1A;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 60, 172, 0.15);
+  margin-bottom: 40px;
+}
+.card-header h1 {
+  color: #FF3CAC;
+  font-size: 1.8rem;
+  padding-top: 20px;
+}
+.card-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+.card-body ul li {
+  padding: 8px 0;
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 30px;
+}
+.card-body ul li::before {
+  content: '🎀';
+  position: absolute;
+  left: 0;
+  font-size: 1.1rem;
+  color: #FF3CAC;
+}
+
+/* Quote Block (with vertical line) */
+#cnt {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 20px;
+  font-style: italic;
+}
+#cnt::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #FF3CAC;
+  border-radius: 10px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  padding: 20px;
+  background-color: #121212;
+  color: #aaaaaa;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #FF3CAC;
+}
+footer a:hover {
+  color: #ffffff;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .card-header h1 {
+    font-size: 1.5rem;
+  }
+  .card-body ul li {
+    font-size: 0.95rem;
+  }
+}
+#f{
+  color: #FF3CAC;
+}
+.circle-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  background-color: #1f1f1f;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 60, 172, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FF3CAC;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  text-align: center;
+}
+.circle span {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 500;
+}
+.circle:hover {
+  background-color: #FF3CAC;
+  color: #fff;
+  transform: scale(1.05);
+}
+/* Modal content */
+.modal-content {
+  border-radius: 20px;
+  background-color: #1a1a1a; /* dark background */
+  box-shadow: 0 0 20px rgba(255, 60, 172, 0.4); /* pink glow */
+  border: none;
+  color: #eee;
+}
+
+/* Modal header */
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0.5rem;
+}
+
+/* Modal title */
+.modal-title {
+  color: #FF3CAC; /* hot pink */
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+/* Modal body text */
+.modal-body {
+  font-size: 1.05rem;
+  color: #ddd;
+  line-height: 1.5;
+  padding-top: 0.5rem;
+}
+
+/* Hover state for close button */
+.btn-close:hover {
+  background-color: white;
+  box-shadow: 0 0 12px rgba(255, 60, 172, 0.7);
+}
+
+.btn-close:hover::before,
+.btn-close:hover::after {
+  background-color: #FF3CAC;
+}
+
+.btn-pink {
+  background-color: #FF3CAC;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  padding: 0.4rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: #e22eac;
+  color: #fff;
+}
